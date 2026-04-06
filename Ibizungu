@@ -1,0 +1,88 @@
+Spécification du Comportement de l’ApplicationIbIZUNGU – Jeu de cartes multijoueur local offline1. GénéralitésApplication 100 % offline (aucune connexion internet requise)Multijoueur local via Wi-FiNombre de joueurs possible : 3, 4 ou 6 joueursDeux modes de multijoueur distincts :Mode Individuel : chaque joueur joue seul (pas de groupes)Mode Groupes : pour 4 ou 6 joueurs uniquement – possibilité de former des groupes (équipes)Thème sombre par défaut, avec possibilité de basculer vers un thème clairUn seul utilisateur (pseudo) par téléphone : le pseudo est saisi une seule fois lors du premier lancement et ne peut plus être modifiéÀ la création du pseudo, le joueur reçoit automatiquement 1000 DDKMise de départ obligatoire : 50 DDK par joueur (prélevés automatiquement au début de la partie)Possibilité de miser plus que 50 DDK (jusqu’à la limite des DDK possédés)2. Flux principal de l’utilisateurÉcran 1 : AccueilBackground : Fond sombre élégant avec un subtil motif de cartes éparpillées (cœurs, carreaux, trèfles, piques) en transparence dorée, léger effet de texture feutre de table de jeu et reflets métalliques sur les bords.Logo Ibizungu avec animation d’entréeBouton principal « Jouer »Bouton « Historique »Bouton « Acheter des DDK » (toujours visible)Nouveau bouton en haut à droite : « Gagner de l’argent » (icône billet + flèche vers le haut, couleur or)Nouveau bouton juste en dessous : « Envoyer des DDK » (icône flèche vers un autre joueur)Bouton « À propos »Affichage permanent du solde actuel en DDKComportement du bouton « Gagner de l’argent »
+
+En cliquant dessus :Une fenêtre modale s’ouvre avec le texte clair :
+
+« Tu peux échanger et vendre 10 000 DDK pour recevoir 5000 FBU sur ton Lumicash. »Si le joueur possède moins de 10 000 DDK → message rouge : « Solde insuffisant (minimum 10 000 DDK) »Si le joueur possède 10 000 DDK ou plus :Champ de saisie : « Ton numéro Lumicash »Bouton « Valider l’échange »Après validation → message vert avec animation :
+
+« Opération confirmée ! 10 000 DDK ont été prélevés. 5000 FBU seront crédités sur ton compte Lumicash. »Les 10 000 DDK sont immédiatement déduits du solde Comportement du bouton « Envoyer des DDK »
+
+En cliquant dessus :Une fenêtre modale s’ouvre avec le texte :
+
+« Envoie 50 DDK à un autre joueur »Un QR Code est généré automatiquement (valable 2 minutes)Texte explicatif : « Demande à l’autre joueur de scanner ce QR Code »Dès qu’un autre joueur scanne le QR Code → transfert automatique et instantané de 50 DDK uniquementMessage de confirmation pour l’expéditeur : « 50 DDK envoyés avec succès ! »Message pour le destinataire : « Tu as reçu 50 DDK de [Pseudo] »Écran 2 : Vérification avant partieBackground : Table de poker verte foncée légèrement voilée, avec des jetons DDK empilés en arrière-plan et une lueur rouge subtile aux coins pour signaler l’importance de la mise.
+
+(Comportement inchangé)Écran 3 : Choix du mode et connexionBackground : Fond noir profond avec un grand QR Code stylisé qui flotte au centre (légèrement animé), entouré de lignes de connexion Wi-Fi qui forment des motifs de cartes. Ambiance « salle de jeu privée ».
+
+(Comportement inchangé)Écran 4 : Écran de jeu (pendant la partie)Background : Grande table de poker verte réaliste et texturée (exactement comme une vraie table de casino), avec rebords en bois foncé et reflets brillants. Légères particules de lumière dorée qui flottent doucement autour des cartes.Cartes : Les cartes doivent être réalistes, avec un design de haute qualité, ressemblant à celles des jeux de cartes traditionnels ou de casino (texture papier réelle, ombres, reflets, coins légèrement usés, couleurs vives et précises pour les symboles ♥ ♦ ♣ ♠). Les valeurs (As, 7, Roi, Valet, Dame, 6) doivent être clairement lisibles et stylées comme dans les jeux professionnels.Animation de distribution des cartes au début de la partie (effet réaliste de cartes qui glissent et se retournent)Chaque joueur voit uniquement ses propres cartesLes autres joueurs sont représentés par des avatars avec leur pseudoAnimation fluide lorsqu’une carte est jouée ou tiréeIndicateur clair du mode (Individuel ou Groupes) et des équipes si applicableBouton pour jouer sa carte (activé uniquement quand c’est le tour du joueur)Affichage permanent des pseudos et avatars des participantsBouton « Quitter la partie » (avec confirmation)Écran 5 : Fin de partieBackground : Table de poker verte avec une explosion festive de cartes dorées et confettis lumineux (effet gagnant). Si défaite : même table mais ambiance plus sombre avec des cartes légèrement floues et une lueur rouge.
+
+(Comportement inchangé)Écran 6 : Historique des partiesBackground : Style « album de cartes anciennes » – fond texture parchemin sombre avec des cartes vintage en transparence et un léger effet de cuir usé sur les bords.
+
+(Comportement inchangé)Écran 7 : Achat de DDKBackground : Fond luxe sombre avec des billets stylisés (FBu et DDK) qui flottent doucement, effet de coffre-fort ouvert et reflets dorés métalliques. Ambiance « banque de jeu privée ».
+
+(Comportement inchangé)Écran 8 : À proposBackground : Fond très épuré et élégant avec un motif discret de dos de cartes burundaises (style traditionnel revisité moderne), texture feutre noir mat et lignes dorées fines.Texte fixe :« Uyu mukino wakozwe na Danny kugira ngo mushobore kuryoherwa no gutsindira amahera mukuryoherwa »Juste en dessous : explication claire des règles du jeu et du fonctionnement (Mode Individuel vs Mode Groupes)3. Comportements transversauxLe solde DDK est toujours visible en haut de tous les écransAnimation de mise à jour du solde lorsque des DDK sont gagnés, perdus ou transférésQuand un joueur quitte la partie : son pseudo est affiché clairement (« [Pseudo] a quitté la partie »)En Mode Groupes : partie fermée pour tous + perte des misesEn Mode Individuel : toutes les mises vont au gagnantInterface fluide, moderne et immersive sur tous les écrans
+
+Règles du jeu Ibizungu (version complète)
+
+1. Constitution des équipes
+
+Si c’est multijoueur en groupe, les équipes sont formées aléatoirement par le jeu.
+
+2. Paquet de cartes
+
+24 cartes : ♥ ♦ ♣ ♠
+
+Valeurs par couleur : As, 7, Roi, Valet, Dame, 6
+
+Hiérarchie pour gagner un pli (pour la même couleur) : As > 7 > Roi > Valet > Dame > 6
+
+3. Détermination de la couleur forte
+
+La première carte posée sur le tapis après la distribution des cartes détermine la couleur la plus forte.
+
+Le premier joueur commence avec n‑1 cartes, car sa dernière carte lors de la distribution est mise sur le tapis (iyatotse, “la carte déposée pour déterminer la couleur la plus forte ”).
+
+Une carte d’une autre couleur ne peut être battue que par :
+
+Une carte supérieure de la même couleur
+
+Ou par n’importe quelle carte de la couleur forte
+
+4. Ordre de jeu
+
+Le joueur 1 commence  comme je l'ai dis sa carte à été mise dircetement sur la table pour la première partie, puis joueur 2, et ainsi de suite à gauche.
+
+Après le premier pli, c’est le joueur qui remporte le pli  qui commence le pli suivant.
+
+Le tour de jeu continue de gauche à droite pour déterminer le prochain joueur à jouer.
+
+5. Cas particuliers et victoires automatiques
+
+Si, dans un meme pli, deux joueurs de la même équipe jouent As et 7 de la couleur forte (iyatotse) , la partie se termine immédiatement et ils perdent (victoire par kurongora uwo mubana).
+
+Si un joueur possède toutes les cartes d’une même couleur lors de la première distribution, il gagne automatiquement (victoire par veto). Si c'est en groupe c'est le groupe qui gagne 
+
+Si une équipe ou un joueur possède tous les As et 7 lors de la fin de la partie (victoire par kappa).
+
+6. Comptage des points
+
+À la fin de la partie, on compte les ibimari (As et 7, cartes principales) et les autres cartes :
+
+K (Roi) = 4 points
+
+J (Valet) = 3 points
+
+Q (Dame) = 2 points
+
+6 = 0 point
+
+Conditions de victoire :
+
+Si un joueur ou equipe atteint 10 points avec 5 ibimari il ou l'equipe gagne.
+
+Si un joueur a 4 ibimari, celui avec le plus de points gagne.
+
+En cas d’égalité, personne ne gagne et les DDK ne sont pas redistribués.
+
+*Ceci de dessous permet de corriger les incohérences du premier texte*
+
+Lors de la distribution des cartes, une carte du 1er joueur est prise aléatoirement et mise sur la table, elle détermine la couleur iyatotse (atout). En groupe : après la partie, si on a 5 ibimari alors on compte si vous avez 10 points ou plus puis l’équipe gagne, si vous en avez 4 on compte celui qui a le plus de points, K = 4 points, J = 3 points, Q = 2 points, 6 = 0 points, si vous avez plus de 5 ibimari vous gagnez automatiquement. Victoires par : Kappa c’est si l’équipe possède tous les ibimari mais uniquement à la fin de la partie et pas pendant la partie, Kurongora c’est si deux joueurs de même équipe lancent dans un même pli As et 7 de la couleur forte (iyatotse) uniquement et non n’importe quelle As et 7. Si pas en groupe : victoire Kappa si après la partie tu es le seul à avoir tous les ibimari, pas de kurongora, victoire par Veto, un individu gagne uniquement s’il possède plus de ibimari que les autres joueurs sans compter de points, en cas d’égalité comptage de points. Utilise les technologies web des mini serveurs pour du Multijoueur offline et aussi sache que ces fichiers seront compilé en capacitor /ionic
+En dernier lieu je voudrais qu'il y ait un espace où saisir un code qui permet de te reconnaître comme admin et t'accorder des privilèges d'administrateur sans des restrictions
